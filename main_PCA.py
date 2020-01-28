@@ -35,6 +35,7 @@ from sklearn.decomposition import PCA
 pca = PCA(n_components = 2)
 X_train = pca.fit_transform(X_train)
 X_test = pca.transform(X_test)
+explainedvariance = pca.explained_variance_ratio_
 
 #Train the model
 from sklearn.naive_bayes import GaussianNB
